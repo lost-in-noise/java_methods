@@ -11,7 +11,7 @@ public class Main {
         printNameAndAge("Nancy", 38);
         int c = sumOfNumbers(5, 3);
         System.out.println(c);
-        takeLoan(25);
+        System.out.println(takeLoan(25));
     }
 
     static void printName() {
@@ -30,13 +30,24 @@ public class Main {
         return a + b;
     }
 
-    static void takeLoan(int age) {
+    //    static void takeLoan(int age) {
+//        if (age < 20) {
+//            System.out.println("ვერ აიღებ სესხს, რადგან 20-ზე ნაკლები ხარ ასაკით");
+//        } else if (age >= 20 & age <= 65) {
+//            System.out.println("შენ შეგიძლია სესხის აღება");
+//        } else {
+//            System.out.println("ვერ აიღებ სესხს, რადგან ხარ 65+");
+//        }
+//    }
+    static String takeLoan(int age) {
+        String result;
         if (age < 20) {
-            System.out.println("ვერ აიღებ სესხს, რადგან 20-ზე ნაკლები ხარ ასაკით");
+            result = "ვერ აიღებ სესხს, რადგან 20-ზე ნაკლები ხარ ასაკით";
         } else if (age >= 20 & age <= 65) {
-            System.out.println("შენ შეგიძლია სესხის აღება");
+            result = "შენ შეგიძლია სესხის აღება";
         } else {
-            System.out.println("ვერ აიღებ სესხს, რადგან ხარ 65+");
+            result = "ვერ აიღებ სესხს, რადგან ხარ 65+";
         }
+        return result;
     }
 }
