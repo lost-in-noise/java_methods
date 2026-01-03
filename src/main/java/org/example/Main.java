@@ -9,6 +9,8 @@ public class Main {
 //        printName();
 //        printLastName();
         printNameAndAge("Nancy", 38);
+        int c = sumOfNumbers(5, 3);
+        System.out.println(c);
     }
 
 //    static void printName() {
@@ -20,6 +22,10 @@ public class Main {
 //    }
 
     static void printNameAndAge(String userName, int userAge) {
-        System.out.println("my name is " + userName + "My age is " + userAge);
+        System.out.println("my name is " + userName + " and my age is " + userAge);
+    }
+
+    static int sumOfNumbers(int a, int b) {
+        return a + b;
     }
 }
