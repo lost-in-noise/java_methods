@@ -12,7 +12,9 @@ public class Main {
         int c = sumOfNumbers(5, 3);
         System.out.println(c);
         System.out.println(takeLoan(25));
-        sumOfNumbers(5,5,7);
+        sumOfNumbers(5, 5, 7);
+        skipTheFifthSymbol("overloading");
+        printTheThirdNumber();
     }
 
     static void printName() {
@@ -30,6 +32,7 @@ public class Main {
     static int sumOfNumbers(int a, int b) {
         return a + b;
     }
+
     static void sumOfNumbers(int a, int b, int c) {
         System.out.println(a + b + c);
     }
@@ -53,5 +56,25 @@ public class Main {
             result = "ვერ აიღებ სესხს, რადგან ხარ 65+";
         }
         return result;
+    }
+
+    static void skipTheFifthSymbol(String textForSkip) {
+        for (int i = 0; i < textForSkip.length(); i++) {
+            if (i == 5) continue;
+            {
+                System.out.println(textForSkip.charAt(i));
+
+            }
+        }
+    }
+
+    static void printTheThirdNumber() {
+        int k = 0;
+        while (k < 10) {
+            System.out.println(k);
+            k += 3;
+
+        }
+
     }
 }
