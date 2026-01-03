@@ -12,6 +12,7 @@ public class Main {
         int c = sumOfNumbers(5, 3);
         System.out.println(c);
         System.out.println(takeLoan(25));
+        sumOfNumbers(5,5,7);
     }
 
     static void printName() {
@@ -28,6 +29,9 @@ public class Main {
 
     static int sumOfNumbers(int a, int b) {
         return a + b;
+    }
+    static void sumOfNumbers(int a, int b, int c) {
+        System.out.println(a + b + c);
     }
 
     //    static void takeLoan(int age) {
